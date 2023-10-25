@@ -4,7 +4,7 @@
   "description": "Application that tells joke",
   "main": "index.js",
   "scripts": {
-    "test": "node src/js/joker.js",
+    "test": "node src/js/joker.test.js",
     "format": "prettier -w src/js/joker.js"
   },
   "repository": {
