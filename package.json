@@ -4,8 +4,8 @@
   "description": "Application that tells joke",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "node src/js/joker.js"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nyolarraklay/joker.git"
