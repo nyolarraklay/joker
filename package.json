@@ -1,5 +1,5 @@
 {
-  "name": "joker",
+  "name": "nyolosorio-package-joker",
   "version": "0.0.4",
   "description": "Application that tells joke",
   "main": "index.js",
