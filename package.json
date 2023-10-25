@@ -19,5 +19,8 @@
     "url": "https://github.com/nyolarraklay/joker/issues"
   },
   "homepage": "https://github.com/nyolarraklay/joker#readme",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
 }
