@@ -4,7 +4,8 @@
   "description": "Application that tells joke",
   "main": "index.js",
   "scripts": {
-    "test": "node src/js/joker.test.js",
+    "test": "npm run test-unit",
+    "test-unit": "jest",
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
@@ -45,6 +46,7 @@
     "eslint": "^8.52.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.4.3",
     "eslint-plugin-n": "^16.2.0",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
