@@ -43,6 +43,8 @@
   "homepage": "https://github.com/nyolarraklay/joker#readme",
   "type": "module",
   "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
     "eslint": "^8.52.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.0",
