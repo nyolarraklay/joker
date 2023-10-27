@@ -4,29 +4,10 @@
   "description": "Application that tells joke",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test-unit",
+    "test": "npm run test-unit && npm run test-e2e-cli",
     "test-unit": "jest",
-    "format": "prettier -w src/**/*.js",
-    "lint": "eslint src/**/*.js",
-    "lint-fix": "eslint src/**/*.js --cache --fix",
-    "prepare": "husky install"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "*.html": [
-      "prettier --write"
-    ],
-    "*.scss": [
-      "prettier --write"
-    ]
+    "test-e2e": "cypress open",
+    "test-e2e-cli": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -45,6 +26,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
+    "cypress": "^13.3.3",
     "eslint": "^8.52.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-cypress": "^2.15.1",
@@ -52,9 +34,7 @@
     "eslint-plugin-jest": "^27.4.3",
     "eslint-plugin-n": "^16.2.0",
     "eslint-plugin-promise": "^6.1.1",
-    "husky": "^8.0.3",
     "jest": "^29.2.0",
-    "lint-staged": "^15.0.2",
     "prettier": "^3.0.3"
   },
   "dependencies": {
